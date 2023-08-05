@@ -50,3 +50,57 @@ a {
 @import "products";
 @import "soon";
 @import "footer";
+
+
+@media screen and (max-width: 1200px){
+    html {
+        font-size: 50%;
+    }
+    nav {
+        #logo {
+            flex: 1;
+        }
+        ul {
+            li {
+                margin-left: 5rem;
+            }
+        }
+    }
+    .showcase {
+        grid-template-columns: 10% 1fr 10%;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+        h2, img, .info {
+            grid-column: 2/3;
+            text-align: center;
+        }
+    }
+    .products {
+        align-items: center;
+        margin-top: 5rem;
+        .cards {
+            flex-direction: column;
+            width: 80%;
+            .card {
+                margin: 5rem 0rem;
+            }
+        }
+    }
+    .soon {
+        overflow: hidden;
+        img {
+            width: 60%;
+        }
+        h3 {
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+    footer {
+        h1 {
+            flex: 1;
+        }
+    }
+}
