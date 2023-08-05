@@ -54,6 +54,7 @@ a {
   background: rgb(7, 7, 7);
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 nav {
@@ -106,7 +107,7 @@ nav .contact {
 .showcase img {
   grid-column: 3/4;
   grid-row: 2/3;
-  height: 110%;
+  height: 120%;
   -o-object-fit: cover;
      object-fit: cover;
   align-self: center;
@@ -115,13 +116,94 @@ nav .contact {
 .showcase .info {
   grid-column: 4/5;
   grid-row: 3/4;
+  padding-bottom: 2rem;
 }
 .showcase .info h3 {
   padding-bottom: 3rem;
 }
 
-.card {
+.products-container {
+  background: #323232;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.products-container .wave {
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+  width: 100%;
+  z-index: -1;
+}
+
+.products {
+  min-height: 90vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.products .cards {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.products .cards .card {
+  background: white;
+  margin: 0rem 8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.products .cards .card h4 {
+  margin: 3rem 0rem 1rem 0rem;
+}
+.products .cards .card p {
+  padding: 2rem;
+}
+.products .cards .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.soon {
+  background: radial-gradient(#525252, #131313);
+  min-height: 80vh;
+  position: relative;
+  z-index: 0;
+}
+.soon img,
+.soon .circle,
+.soon h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.soon .circle {
+  z-index: -1;
+}
+.soon h2 {
+  top: 20%;
+}
+
+footer {
+  background: rgb(7, 7, 7);
+  min-height: 10vh;
+  padding: 0% 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  list-style: none;
+}
+footer h1 {
+  flex: 3;
 }/*# sourceMappingURL=style.css.map */

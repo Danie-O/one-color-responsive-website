@@ -1,0 +1,18 @@
+footer {
+    background: rgb(7, 7, 7);
+    min-height: 10vh;
+    padding: 0% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        list-style: none;
+    }
+    h1 {
+        flex: 3;
+    }
+}
